@@ -1,23 +1,20 @@
-// sum of all numbers divisible by 3 
+// print factorial of number n
 
 #include <iostream>
 using namespace std;
 
 int main()
 {
-
     int n;
-    int sum = 0;
-    cout << "Enter number\n";
+    cout << "Enter Number\n";
     cin >> n;
+    int factorial = 1;
+
     for (int i = 1; i <= n; i++)
     {
 
-        if (i % 3 == 0)
-        {
-            sum += i;
-        }
+        factorial *= i;
     }
-    cout << "sum is: " << sum << endl;
-    return 0;
+
+    cout << "Factorial is: " << factorial << endl;
 }
