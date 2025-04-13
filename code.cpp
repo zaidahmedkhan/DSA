@@ -1,28 +1,23 @@
+// sum of all numbers divisible by 3 
+
 #include <iostream>
 using namespace std;
 
 int main()
 {
 
-    int firstNumber;
-    int secondNumber;
-    cout << "Enter First Number:" << endl;
-    cin >> firstNumber;
+    int n;
+    int sum = 0;
+    cout << "Enter number\n";
+    cin >> n;
+    for (int i = 1; i <= n; i++)
+    {
 
-    cout << "Enter Second Number:" << endl;
-    cin >> secondNumber;
-
-    int addition = firstNumber + secondNumber;
-    int subtraction = firstNumber - secondNumber;
-    int multiplication = firstNumber * secondNumber;
-    int division = firstNumber / secondNumber;
-    int remainder = firstNumber % secondNumber;
-
-    cout << "Addition: " << addition << endl;
-    cout << "Subtraction: " << subtraction << endl;
-    cout << "Multiplication: " << multiplication << endl;
-    cout << "Division: " << division << endl;
-    cout << "Remainder: " << remainder << endl;
-
+        if (i % 3 == 0)
+        {
+            sum += i;
+        }
+    }
+    cout << "sum is: " << sum << endl;
     return 0;
 }
